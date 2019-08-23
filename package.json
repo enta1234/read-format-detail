@@ -1,6 +1,6 @@
 {
   "name": "read-format-detail",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "read format logs",
   "main": "index.js",
   "scripts": {
@@ -12,6 +12,14 @@
   "engines": {
     "node": ">=8.12.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enta1234/read-format-detail.git"
+  },
+  "bugs": {
+    "url": "https://github.com/enta1234/read-format-detail/issues"
+  },
+  "homepage": "https://github.com/enta1234/read-format-detail#readme",
   "author": "Chantatha Polsamak",
   "license": "MIT",
   "dependencies": {
