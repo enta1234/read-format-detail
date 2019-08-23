@@ -1,0 +1,20 @@
+{
+  "name": "read-format-detail",
+  "version": "0.0.1",
+  "description": "read format logs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "bin": {
+    "dif": "./index.js"
+  },
+  "engines": {
+    "node": ">=8.12.0"
+  },
+  "author": "Chantatha Polsamak",
+  "license": "MIT",
+  "dependencies": {
+    "minimist": "^1.2.0"
+  }
+}
