@@ -3,7 +3,7 @@
 ## USE
 'Use `dif -d <path/log>` for validate logs.'
 
-1. `npm i -g sknode`
+1. `npm i -g read-format-detail`
 
 2. `dif -d logs/detail` or `dif -d .` 
 
