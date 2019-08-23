@@ -1,6 +1,6 @@
 {
   "name": "read-format-detail",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "read format logs",
   "main": "index.js",
   "scripts": {
