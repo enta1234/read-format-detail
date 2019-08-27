@@ -24,6 +24,9 @@ if (argv.v || argv.version || argv._[0] === 'version') {
 } else if (argv.d || argv.diff || argv._[0] === 'diff') {
   const iPath = argv.d
   const util = new Utils()
+  if (typeof iPath !== 'string' || !iPath) {
+    throw new TypeError('path is not empty.')
+  }
   util.getFile(iPath)
 } else {
   process.stdout.write('invalid use lib.')

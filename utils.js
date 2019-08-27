@@ -46,7 +46,7 @@ Utils.prototype.getFile = (rPath) => {
                   errLine.push(cLine)
                   process.stderr.write('Line: ' + cLine + ' status: ' + '--------> invalid <--------\n')
                 }
-                if (objData.Input.length !== 1 && objData.Input.length !== 1) {
+                if (objData.Input.length !== 1 && objData.Output.length !== 1) {
                   errLine.push(cLine)
                   process.stderr.write('Line: ' + cLine + ' status: ' + '--------> invalid <--------\n')
                 }
