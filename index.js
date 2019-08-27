@@ -14,14 +14,14 @@ const Utils = require('./utils')
 const argv = require('./node_modules/minimist')(process.argv.slice(2), {
   alias: {
     v: 'version',
-    d: 'diff'
+    d: 'detail'
   }
 })
 
 // show version
 if (argv.v || argv.version || argv._[0] === 'version') {
   process.stdout.write(version)
-} else if (argv.d || argv.diff || argv._[0] === 'diff') {
+} else if (argv.d || argv.detail || argv._[0] === 'detail') {
   const iPath = argv.d
   const util = new Utils()
   if (typeof iPath !== 'string' || !iPath) {
@@ -29,5 +29,7 @@ if (argv.v || argv.version || argv._[0] === 'version') {
   }
   util.getFile(iPath)
 } else {
-  process.stdout.write('invalid use lib.')
+  process.stdout.write('invalid conmand line.\n')
+  process.stdout.write(`read-format-log version: ${version}\n`)
+  process.stdout.write('please use "rfl [opting] <path/filename>"\n')
 }

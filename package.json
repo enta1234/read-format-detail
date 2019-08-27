@@ -1,13 +1,13 @@
 {
   "name": "read-format-log",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "read format logs",
   "main": "index.js",
   "scripts": {
     "start": "node ."
   },
   "bin": {
-    "dif": "./index.js"
+    "rfl": "./index.js"
   },
   "engines": {
     "node": ">=8.12.0"

@@ -36,12 +36,12 @@ Utils.prototype.getFile = (rPath) => {
             }
             process.stdout.write('No.' + cFile + ' Validating: ' + getNameFile[0] + '...\n')
             process.stdout.write('--------------------\n')
-            const rawDatas = ('' + data).replace(/\d.+\|/gm, ',').split(/,{/gm)
+            const rawDatas = data.toString().split(/$\n/gm)
             for (const rawData of rawDatas) {
               if (rawData) {
                 cLine++
                 try {
-                  var objData = JSON.parse('{' + rawData)
+                  var objData = JSON.parse(rawData)
                 } catch (error) {
                   errLine.push(cLine)
                   process.stderr.write('Line: ' + cLine + ' status: ' + '--------> invalid <--------\n')
